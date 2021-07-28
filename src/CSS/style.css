@@ -96,3 +96,15 @@ button a{
     text-decoration: none;
     color: #000;
 }
+.dropdown-items {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+  
