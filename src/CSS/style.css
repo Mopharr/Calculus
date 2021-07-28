@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+ul{
+    list-style: none;
+}
 
 .navbar{
     background: #fff;
@@ -51,7 +54,7 @@
     border-radius: 10px;
     
 }
-.topic-box ul li{
+/* .topic-box ul li{
     list-style: none;
     text-align: center;
     margin: 30px auto;
@@ -91,7 +94,7 @@ input[type="text"] {
 button{
     padding: 10px 20px;
     margin: 10px;
-}
+} */
 button a{
     text-decoration: none;
     color: #000;
@@ -99,13 +102,54 @@ button a{
 .dropdown-items {
     display: none;
 }
-
-ul {
-    list-style: none;
+a.dropdown-btn.dropdown-btn1.active {
+    margin-left: 55px;
+    font-size: 30px;
+    padding: 0;
+}
+.dropdown-btn{
+        background: transparent;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+i.fas.fa-chevron-down {
+    font-size: 26px;
+    align-items: center;
+    margin-top: auto;
+    margin: auto 10px;
+}
+.dropdown-box li {
+    margin: 13px;
+    font-size: 30px;
+    padding: 20px;
+}
+ul.dropdown-items.dropdown-item-sub {
+    position: absolute;
+    left: 13%;
+    top: 70%;
+    background: #FFF;
+    padding: 20px;
+}
+ul.dropdown-items {
+    text-align: center !important;
+    font-size: 20px;
+    margin: 10px;
+}
+ul.dropdown-bo {
+    position: absolute;
+    left: 70%;
+    top: 70%;
+    background: #FFF;
+    padding: 20px;
 }
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 .calculus-type-example {
