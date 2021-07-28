@@ -12,3 +12,29 @@ for (i = 0; i < dropdown.length; i++) {
   }
   });
 }
+
+// Calculus
+
+function switchCalculus (event, switchTab) {
+    let calculusType, calculusTypeExample;
+    calculusTypeExample = document.getElementsByClassName("calculus-type-example");
+    for (i = 0; i < calculusTypeExample.length; i++) {
+        calculusTypeExample[i].style.display = "none";
+    }
+
+    calculusType = document.getElementsByClassName("calculus-type");
+    for (i = 0; i < calculusType.length; i++) {
+        calculusType[i].className = calculusType[i].className.replace("active", "")
+    }
+
+    var x = window.matchMedia("max-width: 767px")
+
+    if (x.matches) {
+        document.getElementById(switchTab).style.display = "block";
+        event.currentTarget.className += " active";
+    } else {
+        document.getElementById(switchTab).style.display = "flex";
+        event.currentTarget.className += " active";
+    }
+    
+}
